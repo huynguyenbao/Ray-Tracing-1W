@@ -33,12 +33,12 @@ void createRandomScene(HittableList& world) {
 			if ((center - Point3(4, 0.2, 0)).length() <= 0.9) continue;
 
 			if (mat < 0.8) {
-				Color albedo = Color(random_float(0.5, 1), random_float(0.5, 1), random_float(0.5, 1));
+				Color albedo = Color::random(0.5, 1) * Color::random(0.5, 1);
 				auto sphereMaterial = make_shared<Lambertian>(albedo);
 				world.add(make_shared<Sphere>(center, 0.2, sphereMaterial));
 			}
 			else if (mat < 0.85) {
-				Color albedo = Color::random(0.5, 1);
+				Color albedo = Color::random(0.5, 1) * Color::random(0.5, 1);
 				float fuzzy = random_float(0, 0.3);
 				auto sphereMaterial = make_shared<Metal>(albedo, fuzzy);
 				world.add(make_shared<Sphere>(center, 0.2, sphereMaterial));	
