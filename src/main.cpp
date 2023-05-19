@@ -24,8 +24,8 @@ void createRandomScene(HittableList& world) {
 	world.add(make_shared<Sphere>(Point3(0, -1000, 0), 1000, groundMaterial));
 
 	float sRadius = 0.2;
-	for (int x = -3; x < 3; x++) {
-		for (int z = -3; z < 3; z++) {
+	for (int x = -11; x < 11; x++) {
+		for (int z = -11; z < 11; z++) {
 			auto mat = random_float();
 			
 			Point3 center(x + 0.9 * random_float(), sRadius, z + 0.9 * random_float());
@@ -69,7 +69,7 @@ int main()
 	Point3 lookAt(0, 0, 0);
 	Vec3 upVector(0, 1, 0);
 	float focalDistance = 10.0;
-	float aperture = 0.1;
+	float aperture = 0.01;
 
 	Camera camera(lookFrom, lookAt, upVector, 20, aspectRatio, focalDistance, aperture);
 	
