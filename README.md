@@ -2,9 +2,9 @@
 
 ![alt text](/image/finalResult.jpg "")
 
-This project is implemented based on the web-book [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html).
+This project is implemented based on the web-book [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html)'s instruction.
 
-Only sphere objects are supported in the implementation. There are 3 types of materials in the project: *Lambertian*, *Metal* and *Dieletric*.
+Only sphere is supported in the implementation. There are 3 types of materials in the project: *Lambertian*, *Metal* and *Dieletric*.
 
 ![alt text](/image/Materials.jpg "")
 
